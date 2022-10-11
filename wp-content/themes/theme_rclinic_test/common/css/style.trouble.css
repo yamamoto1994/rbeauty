@@ -1,0 +1,1269 @@
+/* ====================
+= common
+======================= */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+.mb-sm {
+  margin-bottom: 16px !important;
+}
+.mb-md {
+  margin-bottom: 32px !important;
+}
+.mb-lr {
+  margin-bottom: 48px !important;
+}
+.font-lr {
+  font-size: 20px;
+}
+.font-lg {
+  font-size: 120%;
+  line-height: 1.2;
+}
+
+section.fv-bnr {
+  padding: 40px 0;
+}
+.font-serif {
+  font-family: "Noto Serif JP", "游明朝", YuMincho, "ヒラギノ明朝 ProN W3",
+    "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+}
+.font-emphasis {
+  font-weight: 600;
+}
+.color-primary {
+  color: #fd5b9f;
+}
+.bg-lightGray {
+  background-color: #f9f9f9;
+}
+
+/* =============== title ================ */
+.t-special-title {
+  position: relative;
+  background: linear-gradient(to right, #fd5b9f 0%, #fffb40 100%);
+  text-align: center;
+  color: #fff;
+  padding: 8px 16px;
+  font-size: 48px;
+  font-family: "Noto Serif JP", "游明朝", YuMincho, "ヒラギノ明朝 ProN W3",
+    "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+  font-weight: 600;
+  z-index: 2;
+  margin-bottom: 40px;
+}
+.t-special-title::before,
+.t-special-title::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 120px;
+  height: 100%;
+  background: url("../../images/ico_logo_r_w.svg") center center no-repeat;
+  background-size: contain;
+  opacity: 0.4;
+}
+.t-special-title::before {
+  left: 0;
+}
+.t-special-title::after {
+  right: 0;
+  transform: scale(-1, 1);
+}
+.t-title {
+  position: relative;
+  font-family: "Noto Serif JP", "游明朝", YuMincho, "ヒラギノ明朝 ProN W3",
+    "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+  font-size: 32px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 64px;
+  padding: 16px 24px;
+}
+.t-title::after {
+  position: absolute;
+  content: "";
+  top: 100%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 90px;
+  height: 4px;
+  background: linear-gradient(106deg, #fffb40 40%, #fd5b9f 73%);
+}
+.t-title.t-title--wt {
+  color: #fff;
+  position: static;
+  margin-bottom: 40px;
+}
+.instagrammer_area .t-title {
+  color: #fff;
+}
+.t-title.t-title--wt::after {
+  display: none;
+}
+.t-title-face {
+  font-family: "Noto Serif JP", "游明朝", YuMincho, "ヒラギノ明朝 ProN W3",
+    "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+  font-size: 56px;
+  font-weight: 600;
+  margin-bottom: 48px;
+  color: #fff;
+}
+.t-heading-gradient {
+  position: relative;
+  font-size: 20px;
+  font-family: "Noto Serif JP", "游明朝", YuMincho, "ヒラギノ明朝 ProN W3",
+    "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+  font-weight: 600;
+  padding-left: 24px;
+  margin-bottom: 32px;
+}
+.t-heading-gradient--lr {
+  font-size: 32px;
+}
+.t-heading-gradient::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 6px;
+  height: 100%;
+  background: linear-gradient(180deg, #fd5b9f 0%, #fffb40 100%);
+}
+.t-heading-line {
+  font-family: "Noto Serif JP", "游明朝", YuMincho, "ヒラギノ明朝 ProN W3",
+    "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+  font-weight: 600;
+  margin-bottom: 32px;
+  padding-bottom: 16px;
+  font-size: 24px;
+  border-bottom: 2px solid #000;
+}
+.t-heading-line .parts {
+  display: inline-block;
+  background: #000;
+  text-align: center;
+  color: #fff;
+  padding: 4px 24px;
+  font-size: 20px;
+  margin-right: 24px;
+}
+.t-img-title__container {
+  height: 260px;
+  background: linear-gradient(
+    147deg,
+    rgba(242, 222, 73, 1) 9%,
+    rgba(242, 143, 73, 1) 14%,
+    rgba(255, 240, 230, 1) 53%,
+    rgba(158, 0, 236, 1) 87%,
+    rgba(255, 94, 164, 1) 94%
+  );
+  display: flex;
+  align-items: center;
+  margin-bottom: 56px;
+  position: relative;
+  z-index: 2;
+}
+.t-img-title__container.t-img--01::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 45%;
+  height: 100%;
+  background: url("../../images/trouble/face/img_model01.png") top right
+    no-repeat;
+  background-size: contain;
+}
+.t-img-title__container.t-img--02::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 45%;
+  height: 100%;
+  background: url("../../images/trouble/face/img_model02.png") top right
+    no-repeat;
+  background-size: contain;
+}
+.t-img-title__container .t-img-title {
+  font-size: 48px;
+  font-weight: 600;
+  font-family: "Noto Serif JP", "游明朝", YuMincho, "ヒラギノ明朝 ProN W3",
+    "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+}
+
+.t-lead {
+  margin-bottom: 40px;
+}
+.t-hr {
+  margin: 56px auto;
+  border: none;
+  border-top: 1px solid #ccc;
+}
+.menu_osusume_area .inner .menu_osusume_contents p {
+  position: relative;
+  display: inline-block;
+  min-width: 48%;
+  padding-bottom: 30px;
+  font-size: 2rem;
+  padding-top: 0 !important;
+}
+
+/* =============== flex ================ */
+.t-card__container {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  margin-bottom: 80px;
+}
+.t-card__container--nonMb {
+  margin-bottom: 0;
+}
+.t-card__container .t-card {
+  width: calc(50% - 8px);
+  margin-bottom: 40px;
+}
+.t-card__container--noWrap {
+  display: flex;
+  justify-content: space-between;
+}
+.t-card__container--noWrap .t-card--sm {
+  width: calc(100% / 3 - 24px);
+}
+.t-card__container .t-card.t-card--bdr {
+  border: 1px solid #ccc;
+}
+.t-card__container .t-card:not(:nth-child(even)) {
+  margin-right: 16px;
+}
+.t-card__container .t-card .t-card__label {
+  background: #000;
+  padding: 2px 4px;
+  font-weight: 600;
+  font-size: 24px;
+  text-align: center;
+  color: #fff;
+}
+.t-card__container .t-card .t-card__img,
+.t-card__container--noWrap .t-card--sm .t-card__img {
+  margin-bottom: 24px;
+}
+.t-card__container .t-card .t-card__body {
+  padding: 16px;
+  background: #fff;
+}
+.t-card__container .t-card .t-card__table {
+  border-collapse: separate;
+  width: 100%;
+  margin-bottom: 24px;
+  border-spacing: 0 1em;
+}
+.t-card__container .t-card .t-card__table th {
+  background: #dfdfdf;
+  text-align: center;
+}
+.t-card__container .t-card .t-card__table td {
+  padding-left: 16px;
+}
+.t-media {
+  display: flex;
+  width: 100%;
+  margin-bottom: 40px;
+}
+.t-media--rev {
+  flex-direction: row-reverse;
+}
+.t-media dt {
+  width: 260px;
+}
+.t-media.t-media--half dt {
+  width: 50%;
+}
+
+.t-media dd {
+  padding-left: 16px;
+  width: calc(100% - 260px);
+}
+.t-media.t-media--half dd {
+  width: 50%;
+}
+.t-media dd.min-lr {
+  font-family: "Noto Serif JP", "游明朝", YuMincho, "ヒラギノ明朝 ProN W3",
+    "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+  font-size: 20px;
+  font-weight: 600;
+}
+.t-media--rev dd {
+  padding-right: 16px;
+  padding-left: 0;
+  width: calc(100% - 260px);
+}
+.t-media dd .title {
+  font-family: "Noto Serif JP", "游明朝", YuMincho, "ヒラギノ明朝 ProN W3",
+    "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+  padding-bottom: 16px;
+  margin-bottom: 24px;
+  border-bottom: 1px solid #ccc;
+  font-size: 24px;
+}
+.t-media dd .title.non-bd {
+  border-bottom: none;
+  margin-bottom: 0;
+}
+.t-table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  margin-bottom: 40px;
+}
+.t-table tr:not(:last-child) {
+  border-bottom: 1px solid #ccc;
+}
+.t-table th,
+.t-table td {
+  padding: 10px 16px;
+  vertical-align: middle;
+  font-weight: normal;
+}
+.t-table th.bg-bk {
+  background: #000;
+  color: #fff;
+  text-align: left;
+}
+.t-table td {
+  text-align: center;
+}
+.t-table td:not(:last-child),
+.t-table th:not(:last-child) {
+  border-right: 1px solid #ccc;
+}
+
+p.with-checked {
+  position: relative;
+  padding-left: 20px;
+  margin-bottom: 4px;
+}
+p.with-checked::before {
+  position: absolute;
+  top: 8px;
+  left: 0;
+  content: "";
+  width: 16px;
+  height: 16px;
+  background: url("../../images/ico_check.svg") top center no-repeat;
+  background-size: cover;
+}
+
+.flex-r__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+}
+.flex-r__container .flex-r__item {
+  width: calc(50% - 24px);
+}
+.flex-r__container .flex-r__img {
+  margin-bottom: 24px;
+}
+
+.t-video__container,
+.inner--small {
+  max-width: 832px;
+  padding: 0 16px;
+  margin: 0 auto;
+}
+.inner--md {
+  max-width: 864px;
+  padding: 0 16px;
+  margin: 0 auto;
+}
+.t-video__container .t-video__wrap {
+  position: relative;
+  padding-top: 56.25%;
+  margin-bottom: 24px;
+}
+.t-video__container .t-video__wrap iframe {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100% !important;
+  height: 100% !important;
+}
+.t-treatment__container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-bottom: 40px;
+}
+.t-treatment__container.-mb {
+  margin-bottom: 64px;
+}
+.t-treatment__container .t-treatment__unit {
+  /* display: flex; */
+  width: calc(50% - 16px);
+  margin-bottom: 24px;
+  background: #fff;
+}
+.t-treatment__container .t-treatment__unit a {
+  display: flex;
+}
+.t-treatment__container .t-treatment__unit:nth-of-type(odd) {
+  margin-right: 16px;
+}
+.t-treatment__container .t-treatment__unit dl {
+  display: flex;
+  justify-content: space-between;
+  padding: 24px;
+}
+.t-treatment__container .t-treatment__unit dt {
+  width: 128px;
+  margin-right: 16px;
+}
+.t-treatment__container .t-treatment__unit dd {
+  width: calc(100% - 144px);
+}
+.t-treatment__container .t-treatment__unit dd .type {
+  font-size: 20px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 16px;
+}
+.t-doctor-igBnr__container {
+  max-width: 800px;
+  margin: 0 auto 56px;
+}
+.t-photoSelection-btn {
+  display: block;
+  width: 380px;
+  padding: 16px;
+  text-align: center;
+  font-size: 24px;
+  margin: 0 auto;
+  color: #fff;
+  background: #000;
+  position: relative;
+  border-radius: 40px;
+}
+.t-methods__tabs {
+  display: flex;
+  width: 100%;
+  box-sizing: border-box;
+}
+.t-methods__tabs li {
+  width: 50%;
+}
+.t-methods__tabs li span {
+  display: block;
+  text-align: center;
+  padding: 16px;
+  font-size: 18px;
+  color: #fff;
+  background: #ccc;
+}
+.t-methods__tabs li.is-active span {
+  background: linear-gradient(to right, #fd5b9f 0%, #fffb40 100%);
+}
+.t-methods__body {
+  background: #fff;
+  padding: 32px;
+  display: none;
+}
+.t-methods__body.t-methods__body--bfaf {
+  background: #fff;
+  padding: 0;
+  display: block;
+}
+.t-methods__body.is-show {
+  display: block;
+}
+.t-methods__body .t-methods__title {
+  font-family: "Noto Serif JP", "游明朝", YuMincho, "ヒラギノ明朝 ProN W3",
+    "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+  font-size: 24px;
+  margin-bottom: 32px;
+  text-align: center;
+}
+.t-methods__body .t-methods__photos {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 32px;
+}
+.t-methods__body .t-methods__photos li {
+  width: 48%;
+  position: relative;
+}
+.t-methods__body .t-methods__photos li:first-child::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: -30px;
+  transform: translateY(-50%);
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 20px 0 20px 20px;
+  border-color: transparent transparent transparent #000;
+}
+.t-faq__container {
+  margin-bottom: 24px;
+}
+.t-faq__container dt,
+.t-faq__container dd {
+  width: 100%;
+  padding: 24px 0 24px 64px;
+  position: relative;
+}
+.t-faq__container dt {
+  font-family: "Noto Serif JP", "游明朝", YuMincho, "ヒラギノ明朝 ProN W3",
+    "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+  font-size: 20px;
+  padding-bottom: 24px;
+  border-bottom: 1px dotted #ccc;
+}
+.t-faq__container dt span,
+.t-faq__container dd span {
+  position: absolute;
+  line-height: 0.9;
+  display: block;
+  top: 24px;
+  left: 0;
+  font-size: 56px;
+  font-family: "DM Serif Display", serif;
+}
+.t-faq__container dt span {
+  background: linear-gradient(to right, #fd5b9f 0%, #fffb40 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.t-faq__container dd span {
+  color: #000;
+}
+.t-faq__container dd {
+  border-bottom: 1px solid #000;
+}
+.t-case_area .btn {
+  position: relative;
+  top: auto;
+  right: auto;
+}
+
+/* nose */
+.t-nose-unit {
+  margin-bottom: 56px;
+}
+.t-point-heading {
+  background: linear-gradient(to right, #fd5b9f 0%, #fffb40 100%);
+  padding: 0 24px 2px;
+  text-align: center;
+  display: inline-block;
+  font-family: "DM Serif Display", serif;
+  font-size: 24px;
+  line-height: 1;
+  color: #fff;
+  margin-bottom: 16px;
+}
+.t-point-heading.jap {
+  padding: 8px 24px 8px;
+}
+.t-point-heading span {
+  font-size: 48px;
+  vertical-align: middle;
+  padding-left: 8px;
+  font-style: italic;
+}
+
+/* face */
+.t-face-section {
+  background: url("../../images/trouble/face/face_fv_img.png") top -100px right no-repeat,
+    url("../../images/trouble/face/face_bg.jpg") top center no-repeat;
+  background-size: 45%, contain;
+}
+.t-faceType__container {
+  display: flex;
+  width: 100%;
+  margin: 0 auto 64px;
+  background: #fff;
+}
+.t-faceType__container li {
+  width: calc(100% / 3);
+  display: flex;
+}
+.t-faceType__container li a {
+  display: flex;
+}
+.t-faceType__container dl {
+  width: 100%;
+  border: 1px solid #ccc;
+}
+.t-faceType__container .type {
+  background: #000;
+  text-align: center;
+  font-weight: 600;
+  font-family: "Noto Serif JP", serif;
+  font-size: 24px;
+  color: #fff;
+  padding: 4px;
+}
+.t-faceType__container .type-desc {
+  background: #fff;
+  padding: 4px;
+  text-align: center;
+  font-family: "Noto Serif JP", "游明朝", YuMincho, "ヒラギノ明朝 ProN W3",
+    "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+  font-weight: 600;
+  font-size: 18px;
+}
+.t-face-section .btn_flex_area {
+  margin: 16px 0 64px;
+}
+.t-face-unit:not(.no-mb) {
+  margin-bottom: 96px;
+}
+.eye_flow_contents .first_flow_aside_contents {
+    margin-bottom: 30px;
+}
+.eye_flow_contents .firs_reserve_area{
+	background: none!important;
+	display: flex;
+	justify-content: center;
+	padding: 20px 0 0;
+}
+.eye_flow_contents .firs_reserve_area .tel_area a{
+	background: #000!important;
+	margin-right: 20px;
+}
+
+/* eye02 */
+.t-emphasis-block {
+  display: inline-block;
+  padding: 4px 8px;
+  text-align: center;
+  font-weight: 600;
+  color: #fff;
+  background: #000;
+  margin-bottom: 16px;
+}
+.t-gradient-border {
+  background: linear-gradient(to right, #fd5b9f 0%, #fffb40 100%);
+  padding: 4px;
+  margin: 40px auto;
+}
+.t-gradient-border .gradient-inner {
+  padding: 24px;
+  background: #fff;
+}
+.t-attention-title {
+  font-weight: 600;
+  font-size: 24px;
+  text-align: center;
+  color: #fd5b9f;
+  margin-bottom: 16px;
+}
+.t-common-title {
+  font-weight: 600;
+  font-size: 24px;
+  margin-bottom: 16px;
+}
+.t-attention-title span {
+  position: relative;
+}
+.t-attention-title span::before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: -1.5em;
+  width: 30px;
+  height: 30px;
+  background: url("../../images/ico_attention.svg") center center no-repeat;
+  background-size: contain;
+}
+.t-text-unit {
+  display: flex;
+  justify-content: center;
+  font-size: 18px;
+}
+
+/* diet */
+.diet-plan-bnr__container {
+  margin-top: 40px;
+}
+.diet-plan-bnr__container.-mb {
+  margin-bottom: 40px;
+}
+.diet-desc__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.diet-desc__container .diet-desc__item {
+  width: 50%;
+}
+.diet-desc__container .diet-desc__item .list {
+  margin-top: 24px;
+  font-size: 20px;
+}
+.diet-desc__container .diet-desc__img {
+  width: 50%;
+  padding-left: 32px;
+}
+.diet-desc__container .diet-desc__item .diet-desc__title {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+.t-stepped__unit {
+  margin: 0 auto 64px 0;
+  width: 80%;
+}
+.t-stepped__unit:nth-of-type(even) {
+  margin: 0 0 64px auto;
+}
+.t-stepped__content {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+.t-stepped__step {
+  position: relative;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: linear-gradient(to right, #fd5b9f 0%, #fffb40 100%);
+}
+.t-stepped__step::before {
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  content: "";
+  width: 112px;
+  height: 112px;
+  background: #fff;
+  border-radius: 50%;
+}
+.t-stepped__step .number {
+  position: relative;
+  text-align: center;
+  z-index: 2;
+  font-family: "DM Serif Display", serif;
+  font-size: 48px;
+  padding-top: 24%;
+  line-height: 1;
+}
+.t-stepped__step .number span {
+  display: block;
+  font-size: 20px;
+}
+.t-stepped__title {
+  font-size: 32px;
+  margin-left: 16px;
+}
+.t-price-attention {
+  background: #efefef;
+  padding: 16px;
+  margin-bottom: 24px;
+}
+.t-price-attention .title {
+  text-align: center;
+  font-weight: 500;
+}
+.diet-price h4,
+.skin-price h4 {
+  padding: 20px 0 15px 0;
+  font-size: 2rem;
+  border-bottom: 1px solid #222;
+}
+.diet-price .flex_list_box,
+.skin-price .flex_list_box {
+  display: flex;
+  flex-wrap: wrap;
+}
+.diet-price .flex_list_box:nth-of-type(2n),
+.skin-price .flex_list_box {
+  margin-bottom: 24px;
+}
+.diet-price dt,
+.skin-price dt {
+  width: 350px;
+  letter-spacing: 0.1rem;
+  box-sizing: border-box;
+  padding: 25px 15px;
+  border-bottom: solid 1px #222;
+}
+.skin-price dt span {
+  font-size: 12px;
+}
+.diet-price dd,
+.skin-price dd {
+  box-sizing: border-box;
+  padding: 25px 15px;
+  border-bottom: solid 1px #222;
+  width: calc(100% - 350px);
+  text-align: right;
+}
+.diet-price-notice {
+  margin: 40px auto 0;
+  padding: 24px;
+  border: 1px solid #ccc;
+  font-size: 2rem;
+}
+
+/* skin */
+.imageLink {
+  position: relative;
+  width: 700px;
+  height: 565px;
+  background: url("../../images/trouble/skin01/bg_imagelink.png") center
+    no-repeat;
+  background-size: cover;
+  margin: 0 auto;
+}
+.imageLink .prg01 {
+  display: block;
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  width: 260px;
+  transform: translateX(-50%);
+}
+.imageLink .prg02 {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 258px;
+}
+.imageLink .prg03 {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 250px;
+}
+.imageLink .btn-announce {
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  background: #000;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+  padding: 6px 16px 8px;
+  line-height: 1.3;
+  font-size: 1.4rem;
+  border-radius: 30px;
+}
+
+/* common with header */
+.others__header {
+  width: 100%;
+  height: 320px;
+}
+.others__header .inner {
+  position: relative;
+}
+.others__header .inner h1 {
+  position: absolute;
+  line-height: 1.3;
+  top: 50%;
+  left: 0;
+  transform: translateY(50%);
+  font-size: 48px;
+  font-weight: 500;
+}
+.others__header .inner h1.-wt {
+  color: #fff;
+}
+.others__header.lips {
+  background: #ffeacf url("../../images/trouble/bg_lips.jpg") top right
+    no-repeat;
+  background-size: contain;
+}
+.others__header.hy {
+  background: #b8baba url("../../images/trouble/bg_hy.jpg") top right no-repeat;
+  background-size: contain;
+}
+.others__header.botox {
+  background: #f7e0d9 url("../../images/trouble/bg_botox.jpg") top right
+    no-repeat;
+  background-size: contain;
+}
+.others__header.fatinj {
+  background: #fffef3 url("../../images/trouble/bg_fatinj.jpg") top right
+    no-repeat;
+  background-size: contain;
+}
+.others__header.liposuction {
+  background: #c4c5b5 url("../../images/trouble/bg_lipo.jpg") top right
+    no-repeat;
+  background-size: contain;
+}
+.others__header.bust {
+  background: #f4f5f7 url("../../images/trouble/bg_bust.jpg") top right
+    no-repeat;
+  background-size: contain;
+}
+.others__header.gyn {
+  background: #fff url("../../images/trouble/bg_gyn.jpg") top right no-repeat;
+  background-size: contain;
+}
+.others__header.hips {
+  background: #b8b9a9 url("../../images/trouble/bg_hips.jpg") top right
+    no-repeat;
+  background-size: contain;
+}
+.others__header.epi {
+  background: #ffffff url("../../images/trouble/bg_epi.jpg") top right no-repeat;
+  background-size: contain;
+}
+.others__header.aga {
+  background: #ffffff url("../../images/trouble/bg_aga.jpg") top right no-repeat;
+  background-size: contain;
+}
+.others__header.sweat {
+  background: #d9dce1 url("../../images/trouble/bg_sweat.jpg") top right
+    no-repeat;
+  background-size: contain;
+}
+.others__header.tatoo {
+  background: #c3ccd5 url("../../images/trouble/bg_tatoo.jpg") top right
+    no-repeat;
+  background-size: contain;
+}
+.with-common-header .t-treatment__container .t-treatment__unit dl {
+  padding: 16px;
+}
+
+@media screen and (max-width: 768px) {
+  section:not(.with-common-header) {
+    padding: 40px 0;
+  }
+  .inner--small,
+  .t-video__container,
+  .inner--md {
+    width: 100%;
+    padding: 0;
+  }
+  .t-special-title {
+    padding: 2px 16px;
+    font-size: 3rem;
+    line-height: 1.4;
+    margin-bottom: 24px;
+  }
+  .t-special-title::before,
+  .t-special-title::after {
+    width: 80px;
+  }
+  .t-hr {
+    margin: 32px auto;
+  }
+  .no-inner-cont {
+    padding: 0 6%;
+  }
+  .t-title {
+    padding: 16px 0 8px;
+    margin-bottom: 40px;
+    font-size: 2.8rem;
+  }
+  .t-heading-gradient {
+    font-size: 2rem;
+    padding-left: 16px;
+    margin-bottom: 16px;
+  }
+  .t-heading-line {
+    font-size: 2rem;
+    border-bottom: 2px solid #000;
+  }
+  .t-heading-line .parts {
+    padding: 2px 16px;
+    font-size: 1.6rem;
+    margin-top: 4px;
+    margin-left: 8px;
+  }
+  .menu_osusume_area .inner .menu_osusume_contents p {
+    padding-top: 0 !important;
+    padding-bottom: 10px;
+    font-size: 1.6rem;
+    display: block;
+    min-width: 100%;
+}
+  .t-media,
+  .t-treatment__container,
+  .t-treatment__container .t-treatment__unit a,
+  .t-treatment__container,
+  .t-methods__body .t-methods__photos,
+  .t-card__container,
+  .t-card__container--noWrap,
+  .diet-desc__container,
+  .flex-r__container {
+    display: block;
+  }
+  .t-treatment__container .t-treatment__unit dl {
+    padding: 16px;
+  }
+  .t-treatment__container .t-treatment__unit dt {
+    width: 30%;
+    margin-right: 10px;
+  }
+  .t-treatment__container .t-treatment__unit dd {
+    width: calc(70% - 10px);
+  }
+  .t-treatment__container .t-treatment__unit,
+  .t-methods__body .t-methods__photos li,
+  .t-card__container .t-card,
+  .diet-desc__container .diet-desc__item,
+  .diet-desc__container .diet-desc__img,
+  .t-card__container--noWrap .t-card--sm,
+  .flex-r__container .flex-r__item {
+    width: 100%;
+  }
+  .diet-desc__container .diet-desc__img {
+    padding-left: 0;
+  }
+  .t-treatment__container .t-treatment__unit:nth-of-type(odd),
+  .t-card__container .t-card:not(:nth-child(even)) {
+    margin-right: 0;
+  }
+  .t-card__container .t-card .t-card__img,
+  .diet-desc__container .diet-desc__item,
+  .t-card__container--noWrap .t-card--sm {
+    margin-bottom: 16px;
+  }
+  .t-card__container {
+    margin-bottom: 0;
+  }
+  .t-doctor-igBnr__container {
+    width: 100%;
+    margin: 0 auto 40px;
+  }
+  .t-photoSelection-btn {
+    width: 100%;
+    padding: 12px;
+    font-size: 2rem;
+    border-radius: 40px;
+  }
+  .t-media dt,
+  .t-media dd,
+  .t-media.t-media--half dt,
+  .t-media.t-media--half dd {
+    width: 100%;
+    padding: 0;
+  }
+  .t-media dt {
+    margin-bottom: 16px;
+  }
+  .t-nose-unit,
+  .flex-r__container .flex-r__item,
+  .t-methods__body .t-methods__photos li:first-child {
+    margin-bottom: 32px;
+  }
+  .t-methods__tabs li span {
+    padding: 10px;
+    font-size: 1.6rem;
+  }
+  .t-methods__body,
+  .t-gradient-border .gradient-inner {
+    padding: 16px;
+  }
+  .t-methods__body .t-methods__title,
+  .diet-desc__container .diet-desc__item .diet-desc__title {
+    font-size: 2rem;
+  }
+  .t-methods__body .t-methods__photos li:first-child::after {
+    bottom: -24px;
+    top: auto;
+    left: 0;
+    right: 0;
+    transform: none;
+    border-width: 20px 20px 0 20px;
+    margin: auto;
+    border-color: #000 transparent transparent transparent;
+  }
+  .font-lr,
+  .t-faq__container dt,
+  .t-card__container .t-card .t-card__label,
+  .t-treatment__container .t-treatment__unit dd .type {
+    font-size: 1.8rem;
+  }
+  .t-faq__container dt,
+  .t-faq__container dd {
+    padding: 24px 0 24px 40px;
+  }
+  .t-faq__container dt span,
+  .t-faq__container dd span {
+    font-size: 40px;
+  }
+  .t-face-section {
+    background: url("../../images/trouble/face/face_fv_img.png") top right
+        no-repeat,
+      url("../../images/trouble/face/face_bg.jpg") top center no-repeat;
+    background-size: 45%, 200%;
+  }
+  .t-title-face {
+    font-size: 4rem;
+    padding-top: 64px;
+  }
+  .t-title.t-title--wt {
+    margin-bottom: 24px;
+  }
+  .t-img-title__container {
+    height: auto;
+    min-height: 120px;
+    margin-bottom: 32px;
+  }
+  .t-img-title__container .t-img-title {
+    font-size: 3rem;
+    position: relative;
+    z-index: 2;
+  }
+  .t-card__container .t-card .t-card__table {
+    border-spacing: 0 8px;
+  }
+  .t-card__container .t-card .t-card__table th {
+    width: 25%;
+    padding: 2px;
+    vertical-align: middle;
+  }
+  .t-attention-title,
+  .t-stepped__title,
+  .t-common-title,
+  .t-media dd .title {
+    font-size: 2.2rem;
+  }
+  .t-stepped__title {
+    width: calc(100% - 100px);
+  }
+  .t-attention-title span::before {
+    width: 22px;
+    height: 22px;
+    top: 6px;
+    left: -1em;
+  }
+  .t-text-unit {
+    font-size: 1.6rem;
+  }
+  .t-faceType__container .type {
+    font-size: 2rem;
+  }
+  .t-faceType__container .type-desc,
+  .diet-price-notice {
+    font-size: 1.6rem;
+  }
+  .t-stepped__step {
+    width: 100px;
+    height: 100px;
+  }
+  .t-stepped__title br {
+    display: none;
+  }
+  .t-stepped__step::before {
+    top: 2px;
+    left: 2px;
+    width: 92px;
+    height: 96px;
+  }
+  .t-stepped__step .number {
+    font-size: 3.8rem;
+    line-height: 1;
+  }
+  .t-stepped__step .number span {
+    display: block;
+    font-size: 1.6rem;
+  }
+  .t-stepped__unit,
+  .t-stepped__unit:nth-of-type(even) {
+    margin: 0 auto 40px;
+    width: 100%;
+  }
+  .diet-price dd,
+  .diet-price dt,
+  .skin-price dt,
+  .skin-price dd {
+    width: 100%;
+  }
+  .diet-price dt,
+  .skin-price dt {
+    border-bottom: 1px dashed #e0e0e0;
+    text-align: center;
+  }
+  .skin-price dt span {
+    font-size: 1.2rem;
+  }
+  .imageLink {
+    width: 100%;
+    height: 260px;
+    background-size: contain;
+  }
+  .imageLink .prg01 {
+    top: -20px;
+    left: 50%;
+    width: 130px;
+    transform: translateX(-50%);
+  }
+  .imageLink .prg02 {
+    bottom: 0;
+    left: 0;
+    width: 130px;
+  }
+  .imageLink .prg03 {
+    bottom: 0;
+    right: 0;
+    width: 130px;
+  }
+  .t-treatment__container.-mb {
+    margin-bottom: 32px;
+  }
+  .imageLink .btn-announce {
+    top: 38%;
+    width: 70%;
+    transform: translateX(-50%);
+    padding: 4px 10px 6px;
+    font-size: 1.2rem;
+  }
+  .with-common-header .t-treatment__container .t-treatment__unit dl {
+    padding: 0;
+  }
+  /* common with header */
+  .others__header {
+    height: 200px;
+  }
+  .others__header .inner {
+    position: relative;
+  }
+  .others__header .inner h1 {
+    font-size: 2.8rem;
+  }
+.eye_flow_contents .first_flow_aside_contents {
+    margin-bottom: 20px;
+}
+  .eye_flow_contents .firs_reserve_area{
+	display: block;
+	padding: 20px 0 0;
+}
+.eye_flow_contents .firs_reserve_area .tel_area a{
+	margin-right: 0;
+	margin-bottom: 15px;
+}
+  .others__header.lips,
+  .others__header.fatinj,
+  .others__header.liposuction,
+  .others__header.hy,
+  .others__header.bust,
+  .others__header.gyn,
+  .others__header.epi,
+  .others__header.hips,
+  .others__header.aga,
+  .others__header.tatoo,
+  .others__header.sweat,
+  .others__header.botox {
+    background-size: cover;
+  }
+}

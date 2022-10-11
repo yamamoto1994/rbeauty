@@ -1,0 +1,12 @@
+/*----------------------------------------
+SP
+----------------------------------------*/
+@import url(reset.css) only screen and (max-width:767px);
+@import url(commonSP.css) only screen and (max-width:767px);
+@import url(topSP.css) only screen and (max-width:767px);
+/*----------------------------------------
+PC
+----------------------------------------*/
+@import url(reset.css) print, screen and (min-width:768px);
+@import url(common.css) print, screen and (min-width:768px);
+@import url(top.css) print, screen and (min-width:768px);

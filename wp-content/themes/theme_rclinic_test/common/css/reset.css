@@ -1,0 +1,211 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Noto+Sans+JP&family=Noto+Serif+JP:wght@600&display=swap');
+
+/*--------------------------------------
+	copyright : Lampros co.,Ltd.
+	-----------------------------------*/
+
+/*
+ reset
+==============================*/
+
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,dialog,figure,footer,header,hgroup,menu,nav,section,time,mark,audio,video { margin:0; padding:0; border:0; outline:0; font-size:100%; vertical-align:top; background:none;}
+body { line-height:1; }
+article,aside,dialog,figure,footer,header,hgroup,nav,section { display:block; }
+ul { list-style:none; }
+blockquote,q { quotes:none; }
+blockquote:before,blockquote:after,q:before,q:after { content:''; content:none; }
+a { margin:0; padding:0; border:0; font-size:100%; vertical-align:baseline; background:transparent; }
+ins { background-color:#ff9; color:#000; text-decoration:none; }
+mark { background-color:#ff9; color:#000; font-style:italic; font-weight:bold; }
+del { text-decoration: line-through; }
+abbr[title],dfn[title] { border-bottom:1px dotted #000; cursor:help; }
+table { border-collapse:collapse; border-spacing:0; }
+hr { display:block; height:1px; border:0; border-top:1px solid #cccccc; margin:1em 0; padding:0; }
+input,select { vertical-align:middle; }
+
+.en_serif{
+	font-family: 'DM Serif Display', serif;
+	letter-spacing: 0 !important;
+}
+.serif{
+	font-family:'Noto Serif JP' ,"游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+}
+.co_white{
+	color: #fff;
+}
+.ico_logo-r{
+	position: relative;
+}
+.ico_logo-r::before{
+	position: absolute;
+	content: "";
+	top:-40px;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 40px;
+	height: 40px;
+	opacity: 0.7;
+}
+.ico_logo-r_w::before{
+	background: url("../../images/ico_logo_r_w.svg") no-repeat;
+	background-size: 100%;
+}
+.ico_logo-r_b::before{
+	background: url("../../images/ico_logo_r.svg") no-repeat;
+	background-size: 100%;
+}
+.bg_black{
+	background: #000;
+	color: #fff;
+}
+.bg_gray{
+	background: #f0f0f0;
+}
+.bg_gray_white{
+	background: linear-gradient(to right, #bccccb 0%, #eef2f2 50%, #bccccb 100%);
+}
+.bg_pink_yellow{
+	background:#0a0026 url("../../images/bg_pink_yellow.jpg") no-repeat center center !important; 
+	color: #fff ;
+}
+.bg_blue_purple{
+	background:#2f0033 url("../../images/bg_blue_purple.jpg") no-repeat center center !important; 
+	color: #fff ;
+}
+.bg_orange_blue{
+	background:#000000 url("../../images/bg_orange_blue.jpg") no-repeat center center !important; 
+	color: #fff ;
+}
+.bg_blue{
+	background:url("../../images/bg_blur_blue.png") no-repeat center top; 
+}
+.bg_orange{
+	background:url("../../images/bg_blur_orange.png") no-repeat left -250px bottom 0; 
+}
+.top_bottom_line{
+	border-top: solid #222 1px;
+	border-bottom: solid #222 1px;
+	padding: 15px 0;
+}
+/*----------------------------------------
+
+
+tab
+
+
+----------------------------------------*/
+.tab__body{
+	display: none;
+}
+.tab__body.is-show{
+	display: block;
+}
+@media screen and (max-width:767px) { 
+    .bg_gray_white{
+        background-size: cover !important;
+    }
+    .bg_blue_purple{
+        background-size: cover;
+    }
+    .bg_orange_blue{
+        background-size: cover;
+    }
+    .bg_blue{
+        background-size: cover;
+    }
+    .bg_orange{
+        background-size: cover;
+    }
+    .ico_logo-r{
+        margin-top: 20px;
+    }
+    .ico_logo-r::before{
+        top:-35px;
+        width: 30px;
+        height: 30px;
+    }
+}
+/*----------------------------------------
+
+
+animation
+
+
+----------------------------------------*/
+@media screen { 
+    .fadein{
+        opacity : 0;
+        transform : rotate(10deg);
+        transition : all 2s cubic-bezier(0.19, 1, 0.22, 1);
+        }
+    .on.fadein{
+        opacity : 1;
+        transform : rotate(0);
+        }
+    .fadein_list li {
+        opacity : 0;
+        transform : translate(0, 50px) ;
+        transition : all 3000ms cubic-bezier(0.19, 1, 0.22, 1);
+        }
+    .on_list.fadein_list li:nth-child(1) { animation:on_ac 0.5s ease-in-out 0.40s forwards; }
+    .on_list.fadein_list li:nth-child(2) { animation:on_ac 0.5s ease-in-out 0.50s forwards; }
+    .on_list.fadein_list li:nth-child(3) { animation:on_ac 0.5s ease-in-out 0.60s forwards; }
+    .on_list.fadein_list li:nth-child(4) { animation:on_ac 0.5s ease-in-out 0.70s forwards; }
+    .on_list.fadein_list li:nth-child(5) { animation:on_ac 0.5s ease-in-out 0.80s forwards; }
+    .on_list.fadein_list li:nth-child(6) { animation:on_ac 0.5s ease-in-out 0.90s forwards; }
+    .on_list.fadein_list li:nth-child(7) { animation:on_ac 0.5s ease-in-out 1.0s forwards; }
+    .on_list.fadein_list li:nth-child(8) { animation:on_ac 0.5s ease-in-out 1.1s forwards; }
+
+    .fade_txt,
+	.fade_ph{
+        opacity : 0;
+        }
+    .on .fade_txt{
+        animation:fade_txt 1.0s cubic-bezier(0.19, 1, 0.22, 1)  0.65s forwards;
+        }
+    .on .fade_ph{
+        animation:fade_ph 3.0s cubic-bezier(0.19, 1, 0.22, 1)  3.0s forwards;
+        }
+    .on .fade_txt.fade_txt01{
+        animation-delay: 0.2s;
+        }
+    .on .fade_txt.fade_txt02{
+        animation-delay: 0.4s;
+        }
+    .on .fade_txt.fade_txt03{
+        animation-delay: 0.6s;
+        }
+    .on .fade_txt.fade_txt04{
+        animation-delay: 0.8s;
+        }
+    .on .fade_ph.fade_ph01{
+        animation-delay: 0.2s;
+        }
+    .on .fade_ph.fade_ph02{
+        animation-delay: 0.4s;
+        }
+    .on .fade_ph.fade_ph03{
+        animation-delay: 0.6s;
+        }
+    .on .fade_ph.fade_ph04{
+        animation-delay: 0.8s;
+        }
+    .on .fade_ph.fade_ph05{
+        animation-delay: 1.0s;
+        }
+}
+
+@keyframes on_ac {
+	0% { transform:translate(0,50px); opacity:0; }
+	100% { transform:translate(0,0); opacity:1; }
+}
+
+@keyframes fade_txt {
+	0% { transform:translate(0, 30px); opacity:0; }
+	100% { transform:translate(0,0); opacity:1; }
+}
+@keyframes fade_ph {
+	0% { transform:translate(0, 50px); opacity:0; }
+	100% { transform:translate(0,0); opacity:1; }
+}

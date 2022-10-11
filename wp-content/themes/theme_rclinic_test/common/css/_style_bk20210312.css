@@ -1,0 +1,165 @@
+@charset "utf-8";
+/* CSS Document */
+article{
+	 padding-top: 108px;
+}
+section{
+	position: relative;
+	letter-spacing: 0.08rem;
+}
+section section{
+	padding: 70px 0;
+}
+section .inner{
+	position: relative;
+	z-index: 2;
+	width: 1050px;
+	margin: 0 auto;
+}
+section h1 span{
+	font-size: 2.8rem;
+	vertical-align: baseline;
+}
+section p{
+	line-height: 1.8;
+}
+section img{
+	width: 100%;
+}
+section.modal_flex p img,
+section.banner_flex p img{
+	width: auto;
+}
+/*----------------------------------------
+
+
+ttl_area
+
+
+----------------------------------------*/	
+.ttl_area,
+.other_ttl_area,
+.ph_ttl_area{
+	text-align: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	height: 400px;
+	display: flex;
+	align-items: center;
+	}
+.ttl_area .inner,
+.other_ttl_area .inner,
+.ph_ttl_area .inner{
+	text-align: left;
+	}
+.other_ttl_area .inner{
+	position: static;
+	}
+.ttl_area:not(.tokusyu):not(.parent_ttl_area) .inner,
+.ph_ttl_area .inner{
+    position: relative;
+	height: 100%;
+}
+.other_ttl_area{
+	position: relative;
+	text-align: center;
+	height: 250px;
+	display: flex;
+	align-items: center;
+	}
+.ph_ttl_area::before,
+.other_ttl_area::before,
+.other_ttl_area::after,
+.ph_ttl_area .inner::after,
+.clinic_ttl_area .inner::after,
+.ttl_area:not(.parent_ttl_area) .inner::after{
+	position: absolute;
+	content: "";
+	}
+/*.other_ttl_area::before{
+	top:0;
+	left: 0;
+	background-image: url("../../images/other_fv_ttl_bg_l.png") , url("../../images/other_fv_ttl_bg_r.png") ;
+	background-position: left top,right bottom;
+	background-repeat: no-repeat , no-repeat;
+	width: 100%;
+	height: 250px;
+}*/
+.ph_ttl_area .inner::after,
+.ttl_area .inner::after,
+.clinic_ttl_area .inner::after{
+	top:0;
+	left: 50%;
+	transform: translateX(-50%);
+	margin-left: -500px;
+	background: url("../../images/ico_logo_r_w.svg") no-repeat;
+	width: 250px;
+	height: 250px;
+	opacity: 0.3;
+	z-index: 1;
+	}
+.ph_ttl_area .inner::after{
+	width: 400px;
+	height: 400px;
+	opacity: 0.1;
+	background: url("../../images/ico_logo_r.svg") no-repeat;
+	}
+.other_ttl_area:not(.tokusyu)::before,
+.other_ttl_area:not(.tokusyu)::after{
+	position: absolute;
+	content: "";
+	}
+.ph_ttl_area::before,
+.other_ttl_area::before{
+	top:-200px;
+	left: -250px;
+	background: url("../../images/bg_blur_yellow.png") no-repeat ;
+	background-size: 100%;
+	width: 40%;
+	height: 450px;
+	min-width: 700px;
+}
+.ph_ttl_area::before{
+	height: 700px;}
+.other_ttl_area::after{
+	bottom:0;
+	right: -200px;
+	background:  url("../../images/bg_blur_purple.png") no-repeat right bottom;
+	background-size:  100%;
+	width: 40%;
+	height: 250px;
+	min-width: 700px;
+}
+.clinic_ttl_area .title{
+	text-align: center !important;
+	}
+.ph_ttl_area .title,
+.ttl_area .title,
+.other_ttl_area .title{
+	font-size: 4.0rem;
+}
+
+.other_ttl_area .title.en_serif{
+	font-size: 5.0rem;
+}
+.ph_ttl_area p,
+.ttl_area .title p,
+.other_ttl_area p{
+	font-size: 2.0rem;
+}
+.ttl_area:not(.parent_ttl_area) .title{
+	padding-top: 50px;
+}
+.ph_ttl_area .title{
+	padding-top: 120px;
+}
+.ph_ttl_area .title,
+.ph_ttl_area p,
+.ttl_area .title,
+.ttl_area p{
+	position: relative;
+	z-index: 2;
+}
+@media only screen and (max-width:767px) {
+
+}

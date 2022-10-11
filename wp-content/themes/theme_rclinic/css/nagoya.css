@@ -1,0 +1,224 @@
+/*----------------------------------------
+main-sld
+----------------------------------------*/
+.main-sld {
+  margin: 30px auto;
+  padding-bottom: 7%;
+}
+
+.main-sld img {
+  width: 100%;
+}
+
+@media screen and (max-width: 767px) {
+  .main-sld {
+    margin: 20px auto;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .main-sld {
+    padding-bottom: 15%;
+  }
+}
+
+/*----------------------------------------
+pickup
+----------------------------------------*/
+.pickup {
+  margin: -50px auto 100px !important;
+  padding: 20px 0 0;
+}
+
+@media screen and (max-width: 767px) {
+  .pickup {
+    margin: 0px auto 0px !important;
+  }
+}
+
+.pickup ul {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.pickup li {
+  width: 48%;
+  margin-bottom: 30px;
+}
+
+@media screen and (max-width: 767px) {
+  .pickup li {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+}
+
+.pickup li img {
+  width: 100%;
+}
+
+/*----------------------------------------
+information_area
+----------------------------------------*/
+.information_area {
+  margin: 40px 0 180px !important;
+  background: #222;
+  padding: 0;
+}
+
+.information_area .information_title {
+  background: #000;
+}
+
+.information_area .inner {
+  margin: 0 auto;
+}
+
+.information_area .inner p,
+.information_area .inner ul {
+  margin-bottom: 30px;
+  line-height: 2.0;
+}
+
+.news_area .inner,
+.information_area .information_title .inner {
+  display: flex;
+}
+
+.news_area .news_title_area,
+.information_area .information_title h2 {
+  border-right: 1px solid #fff;
+  width: 180px;
+  margin-right: 50px;
+  padding: 15px 0;
+  font-size: 2.4rem !important;
+  font-weight: normal;
+  margin-bottom: 0;
+  text-align: left !important;
+}
+
+.news_area .inner .txt_area,
+.information_area .information_title h3 {
+  position: relative;
+  width: calc(100% - 230px);
+  padding: 15px 0;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+.information_area .information_title h3::before {
+  position: absolute;
+  content: "";
+  right: 0;
+  top: 50%;
+  width: 10px;
+  height: 10px;
+  border-right: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  transform: translateY(-50%) rotate(45deg);
+  transition: transform 0.2s;
+}
+
+.information_area .information_title::before,
+.information_area .information_title::after {
+  display: none  !important;
+}
+
+.information_area .information_title.active h3::before {
+  transform: translateY(-50%) rotate(-135deg);
+}
+
+.information_area .information_contents {
+  padding: 0 0 80px;
+}
+
+.information_area .information_contents .inner {
+  background: #fff;
+  padding: 60px;
+  margin: 60px auto 0;
+  box-sizing: border-box;
+}
+
+.information_area .information_contents .infomation_logo {
+  position: relative;
+  left: calc(100% - 200px);
+  width: 200px;
+  margin-top: 50px;
+}
+
+@media screen and (max-width: 767px) {
+  .information_area {
+    margin: 40px 0 100px !important;
+    background: #222;
+    padding: 0;
+  }
+  .information_area .information_title {
+    background: #000;
+  }
+  .news_area .inner,
+  .information_area .inner {
+    margin: 0 auto;
+    flex-wrap: wrap;
+    position: relative;
+  }
+  .information_area .inner p,
+  .information_area .inner ul {
+    margin-bottom: 20px;
+    line-height: 1.8;
+  }
+  .news_area .news_title_area,
+  .information_area .information_title h2 {
+    padding: 12px 0 5px;
+    font-size: 2.0rem !important;
+    font-weight: normal;
+    margin-bottom: 0;
+    text-align: left !important;
+    width: 100%;
+    border: none;
+  }
+  .news_area .inner .txt_area,
+  .information_area .information_title h3 {
+    padding: 0 0 12px 0;
+    font-size: 1.6rem;
+    width: 100%;
+    position: unset;
+  }
+  .information_area .information_title h3::before {
+    position: absolute;
+    content: "";
+    right: 0;
+    top: 50%;
+    width: 10px;
+    height: 10px;
+    border-right: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    transform: translateY(-50%) rotate(45deg);
+    transition: transform 0.2s;
+  }
+  .information_area .information_title.active h3::before {
+    transform: translateY(-50%) rotate(-135deg);
+  }
+  .information_area .information_title::before,
+  .information_area .information_title::after {
+    display: none  !important;
+  }
+  .information_area .information_contents {
+    padding: 0 0 40px;
+  }
+  .information_area .information_contents .inner {
+    background: #fff;
+    padding: 5%;
+    margin: 20px auto 0;
+    box-sizing: border-box;
+  }
+  .information_area .information_contents .infomation_logo {
+    position: relative;
+    left: 65%;
+    max-width: 200px;
+    width: 35%;
+    margin-top: 30px;
+  }
+}

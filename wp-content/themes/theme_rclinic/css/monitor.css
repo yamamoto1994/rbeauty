@@ -1,0 +1,1402 @@
+@charset "UTF-8";
+/* ===================================================================
+// 共通
+// ===================================================================*/
+em {
+  font-style: normal;
+}
+
+.sp680 {
+  display: none;
+}
+
+@media (max-width: 680px) {
+  .pc680 {
+    display: none;
+  }
+  .sp680 {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .pc480 {
+    display: none;
+  }
+}
+
+.sp480 {
+  display: none;
+}
+
+@media screen and (max-width: 480px) {
+  .sp480 {
+    display: block;
+  }
+}
+
+.marker {
+  background: linear-gradient(transparent 60%, #fff9b7 60%);
+  font-weight: bold;
+}
+
+.mt30 {
+  margin-top: 30px;
+}
+
+/* ===================================================================
+// monitor
+// ===================================================================*/
+.dr-moni {
+  width: 90%;
+  margin: 50px auto 0;
+}
+
+@media screen and (max-width: 480px) {
+  .dr-moni {
+    width: 100%;
+    margin: 30px auto 0;
+  }
+}
+
+.dr-moni img {
+  box-shadow: 2px 2px 4px gray;
+}
+
+.dr-moni .m-att {
+  font-size: 12px;
+  line-height: 1.5;
+  text-indent: -1em;
+  text-align: right;
+  display: block;
+  margin: 5px auto 0;
+}
+
+.monitor_area h2 {
+  font-size: 2.6rem;
+  margin-bottom: 50px;
+}
+
+@media screen and (max-width: 480px) {
+  .monitor_area h2 {
+    font-size: 2rem;
+  }
+}
+
+.monitor_contents_area ul {
+  list-style: disc outside;
+  margin-left: 20px;
+}
+
+.monitor_contents_area .fs {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.monitor_contents_area .fs figure {
+  width: 48%;
+}
+
+.monitor_flow {
+  padding: 60px 0 40px;
+}
+
+@media screen and (max-width: 767px) {
+  .monitor_flow {
+    padding: 20px 0 10px;
+  }
+}
+
+.monitor_flow ul {
+  background: #F5F5F5;
+  padding: 50px 0 20px;
+}
+
+.monitor_flow ul li {
+  display: flex;
+  justify-content: center;
+  background: #fff;
+  position: relative;
+  counter-increment: point;
+  width: 90%;
+  margin: 0 auto 30px;
+}
+
+.monitor_flow ul li:nth-of-type(1) dt {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.monitor_flow ul li:nth-of-type(1) dt figure {
+  width: 20%;
+}
+
+@media screen and (max-width: 480px) {
+  .monitor_flow ul li:nth-of-type(1) dt figure {
+    width: 30%;
+  }
+}
+
+.monitor_flow ul li h4 {
+  text-align: center;
+  font-size: 2rem;
+  padding: 15px 0;
+}
+
+@media screen and (max-width: 480px) {
+  .monitor_flow ul li h4 {
+    font-size: 1.5rem;
+    margin-left: 10px;
+  }
+}
+
+.monitor_flow ul li h4::before {
+  font-family: 'Noto Serif JP' ,"游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+  color: #fff;
+  padding: 10px;
+  background: #A8A8A8;
+  z-index: 1;
+  padding: 0 10px;
+  font-size: 4rem;
+  left: 0;
+  content: "0" counter(point);
+  position: absolute;
+  top: 0;
+  text-align: center;
+  line-height: 1.3;
+}
+
+.monitor_flow dl {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+}
+
+@media screen and (max-width: 480px) {
+  .monitor_flow dl {
+    width: 90%;
+  }
+}
+
+.monitor_flow dd {
+  display: flex;
+}
+
+@media screen and (max-width: 580px) {
+  .monitor_flow dd {
+    padding: 10px 0 30px;
+  }
+}
+
+.monitor_flow dd figure {
+  flex-basis: 20%;
+  padding-right: 30px;
+}
+
+@media screen and (max-width: 480px) {
+  .monitor_flow dd figure {
+    width: 30%;
+    padding-right: 0;
+  }
+}
+
+.monitor_flow dd span {
+  flex-basis: 70%;
+}
+
+@media screen and (max-width: 480px) {
+  .monitor_flow dd span {
+    padding-left: 20px;
+  }
+}
+
+.monitor_flow .oubo-f {
+  background: #fff;
+  padding: 30px 0 50px;
+}
+
+@media screen and (max-width: 480px) {
+  .monitor_flow .oubo-f {
+    padding: 30px 0 20px;
+  }
+}
+
+.monitor_flow .oubo-f span {
+  margin: 0 0 5px;
+  text-indent: -1em;
+  display: block;
+}
+
+.monitor_flow .oubo-f figure {
+  width: 60%;
+  margin: 10px auto 30px;
+}
+
+.monitor_flow .oubo-btn {
+  font-family: 'Noto Serif JP' ,"游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+  display: block;
+  text-align: center;
+  margin: 50px auto 70px;
+  font-size: 2.0rem;
+}
+
+@media screen and (max-width: 480px) {
+  .monitor_flow .oubo-btn {
+    font-size: 1.7rem;
+  }
+}
+
+.monitor_flow .oubo-btn a {
+  background: #c49859;
+  box-sizing: border-box;
+  color: #fff;
+  border-radius: 50px;
+  padding: 15px 20px;
+}
+
+.monitor_qa {
+  padding: 60px 0 40px;
+}
+
+@media screen and (max-width: 767px) {
+  .monitor_qa {
+    padding: 20px 0 10px;
+  }
+}
+
+.monitor_qa dl {
+  background: #F5F5F5;
+  margin: 30px auto;
+  padding: 30px;
+}
+
+@media screen and (max-width: 480px) {
+  .monitor_qa dl {
+    margin: 15px auto;
+  }
+}
+
+.monitor_qa dt {
+  position: relative;
+  padding: 0 0 20px 40px;
+  margin-bottom: 30px;
+  border-bottom: 3px dotted #ccc;
+}
+
+.monitor_qa dt::before {
+  position: absolute;
+  color: #A8A8A8;
+  font-size: 3rem;
+  font-weight: normal;
+  top: -12px;
+  left: 0;
+  content: 'Q';
+  font-family: 'Noto Serif JP' ,"游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+}
+
+.monitor_dr {
+  padding: 60px 0 40px;
+  text-align: center;
+}
+
+@media screen and (max-width: 767px) {
+  .monitor_dr {
+    padding: 20px 0 10px;
+  }
+}
+
+.monitor_dr h3 {
+  text-align: left;
+}
+
+.monitor_dr .waku {
+  display: flex;
+  background: url("/rclinic/wp-content/themes/theme_rclinic/images/doctor_ph_bg.png") no-repeat;
+  background-size: cover;
+}
+
+.monitor_dr .waku figure {
+  flex-basis: 50%;
+}
+
+@media screen and (max-width: 480px) {
+  .monitor_dr .waku figure {
+    flex-basis: 40%;
+    overflow: hidden;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .monitor_dr .waku figure img {
+    object-fit: cover;
+    height: 60vw;
+  }
+}
+
+.monitor_dr .waku-l {
+  flex-basis: 50%;
+  text-align: left;
+}
+
+@media screen and (max-width: 480px) {
+  .monitor_dr .waku-l {
+    flex-basis: 60%;
+  }
+}
+
+.monitor_dr .waku-l h3 {
+  font-family: 'Noto Serif JP' ,"游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+  font-size: 2rem;
+}
+
+@media screen and (max-width: 480px) {
+  .monitor_dr .waku-l h3 {
+    font-size: 1.7rem;
+  }
+}
+
+.monitor_dr .waku-l p {
+  margin: 30px auto;
+}
+
+@media screen and (max-width: 480px) {
+  .monitor_dr .waku-l p {
+    margin: 15px auto;
+  }
+}
+
+.monitor_dr .waku-l span {
+  display: block;
+  font-family: 'Noto Serif JP' ,"游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+}
+
+.monitor_dr .waku-l span:nth-of-type(2) {
+  font-size: 2rem;
+}
+
+.monitor_dr .waku-l span:nth-of-type(2) em {
+  font-size: 1.5rem;
+  vertical-align: baseline;
+  margin-left: 5px;
+}
+
+.moni-v {
+  margin: 30px auto;
+}
+
+@media screen and (max-width: 767px) {
+  .moni-v {
+    width: 80%;
+  }
+}
+
+.video {
+  margin: 30px auto 70px;
+}
+
+.video iframe {
+  width: 100%;
+  height: 450px;
+}
+
+@media screen and (max-width: 680px) {
+  .video iframe {
+    height: 350px;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .video iframe {
+    height: 300px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .video iframe {
+    height: 250px;
+  }
+}
+
+.sp767 {
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
+  .sp767 {
+    display: block;
+  }
+}
+
+/* ===================================================================
+// moni-eye
+// ===================================================================*/
+.moni-eye01 {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.moni-eye01 h2 {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.moni-eye01 figure {
+  width: 48%;
+}
+
+@media screen and (max-width: 767px) {
+  .moni-price {
+    margin-bottom: 30px;
+  }
+}
+
+.moni-price h3 {
+  margin: 30px auto 10px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+@media screen and (max-width: 767px) {
+  .moni-price h3 {
+    margin: 20px auto 0;
+  }
+}
+
+.moni-price ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.moni-price li {
+  width: 48%;
+}
+
+.moni-price li:nth-of-type(1) dt {
+  background: #ACACAC;
+  color: #fff;
+}
+
+.moni-price li:nth-of-type(1) dd {
+  margin-top: 10px;
+}
+
+.moni-price li:nth-of-type(1) dd em {
+  position: relative;
+}
+
+.moni-price li:nth-of-type(1) dd em::before {
+  position: absolute;
+  content: "";
+  display: block;
+  transform: rotate(-10deg);
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 100%;
+  height: 8px;
+  top: 50%;
+  left: 0;
+}
+
+.moni-price li:nth-of-type(2) dt {
+  background: #C3A76B;
+  color: #fff;
+}
+
+.moni-price li:nth-of-type(2) dd {
+  color: #ff0e73;
+}
+
+.moni-price li:nth-of-type(2) dd em {
+  font-size: 4rem;
+}
+
+@media screen and (max-width: 580px) {
+  .moni-price li:nth-of-type(2) dd em.s-f02 {
+    font-size: 3rem;
+  }
+}
+
+.moni-price li em {
+  font-style: normal;
+  vertical-align: baseline;
+  font-weight: bold;
+}
+
+.moni-price li dt {
+  padding: 5px;
+  text-align: center;
+}
+
+.moni-price li dd {
+  text-align: center;
+  font-size: 3rem;
+}
+
+@media screen and (max-width: 580px) {
+  .moni-price li dd.s-f01 {
+    font-size: 2.1rem;
+  }
+}
+
+.att {
+  font-size: 1rem;
+  background: #f4f4f4;
+  padding: 15px 20px;
+  margin-top: 20px;
+}
+
+.att2 {
+  font-size: 1rem;
+  padding: 0 20px;
+  margin-top: 5px;
+}
+
+@media screen and (max-width: 480px) {
+  .att2 {
+    padding: 0;
+  }
+}
+
+.dr-heikei h3 {
+  font-size: 2.5rem !important;
+}
+
+@media screen and (max-width: 767px) {
+  .dr-heikei h3 {
+    font-size: 2rem !important;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .dr-heikei h3 {
+    font-size: 1.7rem !important;
+  }
+}
+
+.dr-heikei .waku-l figure {
+  width: 50%;
+  margin: 50px 0 20px;
+}
+
+.dr-heikei .waku-l span:nth-of-type(1) {
+  font-size: 1rem;
+}
+
+.ninki {
+  padding-bottom: 0;
+}
+
+.ninki h4 {
+  font-family: 'Noto Serif JP' ,"游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+  font-size: 2rem;
+  background: #ebf2f2;
+  padding: 10px 0;
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 767px) {
+  .ninki h4 {
+    font-size: 1.8rem;
+  }
+}
+
+.ninki h4 img {
+  width: 30px !important;
+  margin-right: 3px;
+  margin-top: 5px;
+}
+
+@media screen and (max-width: 767px) {
+  .ninki h4 img {
+    width: 25px !important;
+    margin-right: 0;
+    margin-top: 5px;
+  }
+}
+
+.ninki .video {
+  margin: 30px auto;
+}
+
+@media screen and (max-width: 767px) {
+  .keireki {
+    margin-top: 20px;
+  }
+}
+
+.keireki dl {
+  width: 90%;
+  margin: 0 auto;
+  background: #fff;
+  padding: 0 30px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.keireki dt {
+  text-align: left;
+  line-height: 1.6;
+  width: 20%;
+}
+
+.keireki dd {
+  text-align: left;
+  line-height: 1.6;
+  width: 80%;
+}
+
+.momosume {
+  background: url("/rclinic/wp-content/themes/theme_rclinic/images/b-story/age19-12.jpg ") no-repeat right center;
+  background-size: cover;
+  height: 350px;
+  position: relative;
+}
+
+.momosume ul {
+  list-style: none;
+  background: rgba(255, 255, 255, 0.7);
+  width: 40%;
+  padding: 30px;
+  position: absolute;
+  bottom: 30px;
+}
+
+.momosume li {
+  position: relative;
+  padding: 10px;
+}
+
+.momosume li::before {
+  content: "";
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  top: 13px;
+  left: -15px;
+  background-image: url(/rclinic/wp-content/themes/theme_rclinic/images/campaign/check.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.nose-sume {
+  background: url("/rclinic/wp-content/themes/theme_rclinic/images/moni-nose/osusume.jpg ") no-repeat right center;
+  background-size: cover;
+}
+
+@media screen and (max-width: 767px) {
+  .adj01 {
+    margin-top: 30px;
+  }
+}
+
+.kodawari dl {
+  background: linear-gradient(to right, #bccccb 0%, #eef2f2 50%, #bccccb 100%);
+}
+
+.kodawari dt {
+  padding-left: 100px;
+  font-family: 'Noto Serif JP' ,"游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+  font-size: 2rem;
+}
+
+.kodawari dt::before {
+  background: url(/rclinic/wp-content/themes/theme_rclinic/images/moni-eye/dr-tomita.png) no-repeat;
+  content: '';
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  background-size: contain;
+  position: absolute;
+  top: -50px;
+  left: -10px;
+  z-index: 1;
+}
+
+@media screen and (max-width: 480px) {
+  .kodawari dt::before {
+    top: -20px;
+    left: -20px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .kodawari dt {
+    font-size: 1.7rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .kodawari dt {
+    padding-left: 22vw;
+  }
+}
+
+.kodawari dd {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.kodawari dd div {
+  width: 48%;
+}
+
+@media screen and (max-width: 680px) {
+  .kodawari dd div {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+.kodawari dd .moni-eye-v {
+  width: 48%;
+}
+
+@media screen and (max-width: 680px) {
+  .kodawari dd .moni-eye-v {
+    width: 100%;
+  }
+}
+
+.kodawari dd figure {
+  width: 48%;
+}
+
+@media screen and (max-width: 680px) {
+  .kodawari dd figure {
+    width: 100%;
+  }
+}
+
+.k-yoshi dt::before {
+  background: url(/rclinic/wp-content/themes/theme_rclinic/images/moni-nose/dr-yoshida.png) no-repeat;
+  background-size: contain;
+}
+
+.moni-eye02 {
+  margin: 50px auto 30px !important;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.moni-eye02 h4 {
+  width: 100%;
+  font-size: 2rem;
+  background: #ebf2f2;
+  padding: 10px;
+  margin: 25px auto 10px;
+}
+
+@media screen and (max-width: 680px) {
+  .moni-eye02 h4:nth-of-type(1) {
+    margin: 0 auto 10px;
+  }
+}
+
+.moni-eye02 figure {
+  width: 48%;
+}
+
+.w100 {
+  width: 100%;
+}
+
+.deka {
+  font-size: 2rem;
+}
+
+.mt10 {
+  margin-top: 10px;
+}
+
+.kogao-sume {
+  background: url("/rclinic/wp-content/themes/theme_rclinic/images/moni-kogao/osusume.jpg") no-repeat right center;
+  background-size: cover;
+}
+
+.kei {
+  border: 1px solid #ccc;
+}
+
+/* ===================================================================
+// nose-chart
+// ===================================================================*/
+.takasa {
+  padding-top: 50%;
+}
+
+@media screen and (max-width: 580px) {
+  .takasa {
+    padding-top: 90%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .takasa {
+    padding-top: 100%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .takasa {
+    padding-top: 130%;
+  }
+}
+
+.takasa1 {
+  padding-top: 265%;
+}
+
+@media screen and (max-width: 767px) {
+  .takasa1 {
+    padding-top: 280%;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .takasa1 {
+    padding-top: 350%;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .takasa1 {
+    padding-top: 400%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .takasa1 {
+    padding-top: 450%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .takasa1 {
+    padding-top: 470%;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .takasa1 {
+    padding-top: 500%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .takasa1 {
+    padding-top: 550%;
+  }
+}
+
+.takasa0 {
+  display: none;
+}
+
+.choose_box {
+  position: relative;
+  width: 100%;
+}
+
+.choose_box p {
+  font-size: 24px;
+  display: block;
+  font-weight: 600;
+  text-align: center;
+  font-family: 'Noto Serif JP' ,"游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+  margin-bottom: 15px;
+}
+
+@media screen and (max-width: 580px) {
+  .choose_box p {
+    font-size: 1.8rem;
+  }
+}
+
+.choose_box .p-txt {
+  font-size: 24px;
+  display: block;
+  font-weight: 600;
+  text-align: center;
+  font-family: 'Noto Serif JP' ,"游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+  margin-bottom: 15px;
+}
+
+@media screen and (max-width: 580px) {
+  .choose_box .p-txt {
+    font-size: 1.8rem;
+  }
+}
+
+.choose_box ul {
+  width: 80%;
+  text-align: center;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width: 767px) {
+  .choose_box ul {
+    width: 100%;
+  }
+}
+
+.choose_box ul li {
+  width: calc(100% / 2 - 20px);
+  margin-right: 20px;
+  margin-bottom: 20px;
+  list-style: none;
+}
+
+.choose_box ul li a {
+  color: #fff;
+  display: block;
+  padding: 20px;
+  text-align: center;
+  background-color: #000;
+  font-weight: 600;
+  font-size: 18px;
+  border: 2px solid #000;
+  text-decoration: none;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+}
+
+.choose_box ul li a:hover {
+  background-color: #fff;
+  color: #000;
+  -webkit-transition: 0.7s;
+  -moz-transition: 0.7s;
+  -o-transition: 0.7s;
+  transition: 0.7s;
+}
+
+@media screen and (max-width: 580px) {
+  .choose_box ul li {
+    width: 100%;
+    margin-right: 0;
+  }
+}
+
+.choose_box ul li:nth-child(2n) {
+  margin-right: 0;
+}
+
+.choose_box a.nose-top {
+  background: #bac0bc;
+  border: 2px solid #bac0bc;
+}
+
+.nc-a01 {
+  margin-bottom: 80px;
+}
+
+.nc-a01 .campaign_banner_l {
+  padding: 0;
+}
+
+.nc-a01 h2 {
+  font-family: 'Noto Serif JP' ,"游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+  margin-bottom: 20px;
+}
+
+.nc-a01 ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.nc-a01 li {
+  width: 24%;
+  box-shadow: 2px 4px 3px rgba(0, 0, 0, 0.2);
+}
+
+@media screen and (max-width: 480px) {
+  .nc-a01 li {
+    margin-bottom: 15px;
+    width: 48%;
+  }
+}
+
+.nc-a01 dl {
+  margin: 0 auto;
+}
+
+.nc-a01 dd {
+  font-family: 'Noto Serif JP' ,"游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+  font-size: 1.5rem;
+  padding: 5px 0 15px;
+  text-align: center;
+  position: relative;
+  background: #959595;
+  color: #fff;
+}
+
+.nc-a01 dd::after {
+  content: '';
+  width: 13px;
+  height: 13px;
+  border: 0;
+  border-bottom: solid 1px #fff;
+  border-right: solid 1px #fff;
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  position: absolute;
+  bottom: 5px;
+  left: 47.5%;
+}
+
+.n-chart {
+  padding: 0;
+}
+
+.n-chart h4 {
+  clear: both;
+  margin: auto;
+  padding: 20px;
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: center;
+  background-color: #f1f1f1;
+  font-family: 'Noto Serif JP' ,"游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+}
+
+.n-chart h4 em {
+  font-size: 24px;
+  vertical-align: baseline;
+}
+
+@media screen and (max-width: 580px) {
+  .n-chart h4 em {
+    font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .n-chart h4 {
+    text-align: left;
+    font-size: 1.8rem;
+  }
+}
+
+.n-chart .h4-st {
+  display: block;
+  font-size: 1rem;
+}
+
+.n-chart .fit {
+  position: absolute;
+  left: 0px;
+  top: 20px;
+  width: 100%;
+}
+
+.cp-osusume {
+  display: flex !important;
+  width: auto !important;
+  background: #f1f1f1;
+  margin: 30px auto;
+  flex-wrap: wrap;
+  padding: 30px;
+  justify-content: space-between;
+}
+
+.cp-osusume h3 {
+  text-align: center;
+  border-bottom: solid 1px #ccc;
+  padding: 15px 0;
+}
+
+.cp-osusume h3 em {
+  display: block;
+  font-style: normal;
+  font-weight: lighter;
+  font-size: 1rem;
+  color: #f7277a;
+}
+
+@media screen and (max-width: 480px) {
+  .cp-osusume {
+    margin: 10px auto;
+    padding: 10px;
+  }
+}
+
+.cp-osusume .cp-l {
+  background: #fff;
+  flex-basis: 48%;
+}
+
+.cp-osusume .cp-l ul {
+  margin: 20px 20px 20px 40px;
+  text-align: left;
+  width: auto;
+}
+
+.cp-osusume .cp-l li {
+  position: relative;
+  list-style: none;
+  line-height: 1.8;
+  padding-left: 20px;
+  margin-bottom: 10px;
+  width: auto !important;
+}
+
+.cp-osusume .cp-l li::before {
+  content: "";
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  top: 3px;
+  left: -15px;
+  background-image: url(/rclinic/wp-content/themes/theme_rclinic/images/campaign/check.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 680px) {
+  .cp-osusume .cp-l li {
+    width: 100% !important;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .cp-osusume .cp-l {
+    flex-basis: 100%;
+  }
+}
+
+.cp-osusume .cp-r {
+  background: #fdfbf2;
+  flex-basis: 48%;
+}
+
+.cp-osusume .cp-r ul {
+  margin: 20px 20px 20px 40px;
+  text-align: left;
+  width: auto;
+}
+
+.cp-osusume .cp-r li {
+  position: relative;
+  list-style: none;
+  line-height: 1.8;
+  padding-left: 20px;
+  margin-bottom: 10px;
+  color: #f7287a;
+  width: auto !important;
+}
+
+.cp-osusume .cp-r li::before {
+  content: "";
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  top: 3px;
+  left: -15px;
+  background-image: url(/rclinic/wp-content/themes/theme_rclinic/images/campaign/maru.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 680px) {
+  .cp-osusume .cp-r li {
+    width: 100% !important;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .cp-osusume .cp-r {
+    flex-basis: 100%;
+    margin-top: 15px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .cp-osusume .cp-r {
+    margin: 10px 0;
+  }
+}
+
+.cp-osusume .ch-btn {
+  margin: 0 auto;
+}
+
+.cp-osusume .ch-btn a.btn {
+  width: auto !important;
+}
+
+@media screen and (max-width: 680px) {
+  .cp-osusume .ch-btn {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .cp-osusume .ch-btn li a {
+    padding: 20px;
+  }
+}
+
+.cp-osusume .cp-b2 {
+  margin-bottom: 20px;
+}
+
+.cp-osusume .cp-b2 span {
+  font-size: 1.8rem;
+  text-align: left;
+  background: #ced3cd;
+  margin-bottom: 0;
+  padding: 5px 15px;
+  display: block;
+  font-family: 'Noto Serif JP' ,"游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+}
+
+@media screen and (max-width: 480px) {
+  .cp-osusume .cp-b2 span {
+    font-size: 1.4rem;
+  }
+}
+
+.cp-osusume .cp-b {
+  flex-basis: 100%;
+  display: flex !important;
+  padding: 30px 0 0;
+  justify-content: space-between;
+}
+
+.cp-osusume .cp-b figure {
+  width: 48%;
+}
+
+.cp-osusume .cp-b.att {
+  font-size: 1rem;
+  background: #fff;
+  padding: 15px 20px;
+  margin-top: 20px;
+  width: auto !important;
+}
+
+@media screen and (max-width: 480px) {
+  .cp-osusume .cp-b.att {
+    margin-top: 10px;
+  }
+}
+
+.cp-osusume .cp-b iframe {
+  width: 100%;
+  height: 450px;
+}
+
+@media screen and (max-width: 680px) {
+  .cp-osusume .cp-b iframe {
+    height: 350px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .cp-osusume .cp-b iframe {
+    height: 250px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .cp-osusume .cp-b {
+    padding: 10px 0 0;
+  }
+}
+
+/* ===================================================================
+// eye-chart
+// ===================================================================*/
+.cp-osusume .cp-b3 {
+  flex-basis: 100%;
+  display: flex !important;
+  padding: 0;
+  justify-content: space-between;
+}
+
+.cp-osusume .cp-b3 figure {
+  width: 50%;
+}
+
+.cp-osusume .cp-b3 video {
+  width: 50%;
+}
+
+.eye-c .takasa {
+  padding-top: 120%;
+}
+
+@media screen and (max-width: 580px) {
+  .eye-c .takasa {
+    padding-top: 160%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .eye-c .takasa {
+    padding-top: 170%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .eye-c .takasa {
+    padding-top: 200%;
+  }
+}
+
+.eye-c .takasa1 {
+  padding-top: 315%;
+}
+
+@media screen and (max-width: 767px) {
+  .eye-c .takasa1 {
+    padding-top: 330%;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .eye-c .takasa1 {
+    padding-top: 420%;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .eye-c .takasa1 {
+    padding-top: 520%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .eye-c .takasa1 {
+    padding-top: 540%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .eye-c .takasa1 {
+    padding-top: 560%;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .eye-c .takasa1 {
+    padding-top: 590%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .eye-c .takasa1 {
+    padding-top: 640%;
+  }
+}

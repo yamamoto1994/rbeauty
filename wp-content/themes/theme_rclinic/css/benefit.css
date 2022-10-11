@@ -1,0 +1,367 @@
+@charset "UTF-8";
+/* ===================================================================
+// 共通
+// ===================================================================*/
+.w100 {
+  width: 100%;
+}
+
+.fs11 {
+  font-size: 11px;
+}
+
+.mt10 {
+  margin-top: 10px;
+}
+
+em {
+  font-style: normal;
+}
+
+.sp680 {
+  display: none;
+}
+
+@media (max-width: 680px) {
+  .pc680 {
+    display: none;
+  }
+  .sp680 {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .pc480 {
+    display: none;
+  }
+}
+
+.sp480 {
+  display: none;
+}
+
+@media screen and (max-width: 480px) {
+  .sp480 {
+    display: block;
+  }
+}
+
+.marker {
+  background: linear-gradient(transparent 60%, #fff9b7 60%);
+  font-weight: bold;
+}
+
+.mt30 {
+  margin-top: 30px;
+}
+
+/* ===================================================================
+// benefit
+// ===================================================================*/
+.tab-container {
+  list-style-type: none;
+  padding: 0 0 100px;
+  position: relative;
+  background: #fff;
+  height: 630px;
+}
+
+@media screen and (max-width: 767px) {
+  .tab-container {
+    height: 90vw;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .tab-container {
+    padding: 0 0 50px;
+  }
+}
+
+.tab-container ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.tab-container .arrows {
+  display: block;
+  width: 60px;
+  font-size: 32px;
+  bottom: 10px;
+  right: 0px;
+  position: absolute;
+}
+
+.tab-container .arrows label {
+  display: inline-block;
+  cursor: pointer;
+  color: #aaa;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  margin-left: 5px;
+}
+
+.tab-container .arrows label:hover {
+  color: #333;
+}
+
+.tab-container .tab-content-container {
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  height: 0;
+  opacity: 0;
+  overflow: hidden;
+  line-height: 3;
+  background: #fff;
+  position: absolute;
+  top: 63px;
+  padding: 40px;
+  border: 3px solid #bfcecd;
+  border-top: 0;
+  box-shadow: 0 5px 5px -5px #333;
+}
+
+@media screen and (max-width: 767px) {
+  .tab-container .tab-content-container {
+    padding: 20px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .tab-container .tab-content-container {
+    padding: 10px;
+  }
+}
+
+.tab-container .tab-content-container .tab-content {
+  opacity: 0;
+  padding: 15px 0;
+  min-height: 185px;
+  transition: opacity 0.1s ease-in;
+}
+
+.tab-container .tab-content-container .tab-content figure {
+  width: 80%;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 767px) {
+  .tab-container .tab-content-container .tab-content figure {
+    width: 100%;
+  }
+}
+
+.tab-container .tab {
+  outline: 0;
+  float: left;
+  cursor: pointer;
+  opacity: 1;
+  width: 49.5%;
+  line-height: 3;
+  display: block;
+  margin: 0;
+  position: relative;
+  background: #bfcecd;
+  color: #fff;
+  text-align: center;
+  border-top: 3px solid #bfcecd;
+  border-right: 3px solid #bfcecd;
+  border-radius: 20px 20px 0 0;
+  font-size: 2rem;
+  font-family: 'Noto Serif JP' ,"游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+}
+
+@media screen and (max-width: 767px) {
+  .tab-container .tab {
+    width: 49%;
+  }
+}
+
+@media screen and (max-width: 509px) {
+  .tab-container .tab {
+    width: 48%;
+  }
+}
+
+.tab-container .tab.l-b {
+  border-left: 3px solid #bfcecd;
+}
+
+.tab-container .tab:hover {
+  background: #bfcecd;
+}
+
+.tab-container .tab-toggle {
+  display: none;
+}
+
+.tab-container .tab-toggle.active + .tab,
+.tab-container .tab-toggle:checked + .tab {
+  background: #fff;
+  color: #333;
+}
+
+.tab-container .tab-toggle.active ~ .tab-content-container,
+.tab-container .tab-toggle:checked ~ .tab-content-container {
+  height: auto;
+  opacity: 1;
+}
+
+.tab-container .tab-toggle.active ~ .tab-content-container .tab-content,
+.tab-container .tab-toggle:checked ~ .tab-content-container .tab-content {
+  opacity: 1;
+}
+
+.tab-container .tab-toggle.active ~ .tab-content-container .tab-content label,
+.tab-container .tab-toggle:checked ~ .tab-content-container .tab-content label {
+  opacity: 1;
+}
+
+.m-btn {
+  width: 100%;
+  margin: 30px auto;
+}
+
+.more-btn {
+  display: flex;
+  text-decoration: none;
+  margin: 0 auto;
+  width: 60%;
+  cursor: pointer;
+  transition-property: color;
+  padding: 0 10px;
+  line-height: 1.2;
+  height: 70px;
+  border: none;
+  color: #FFF;
+  position: relative;
+  z-index: 1;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  border-radius: 80px;
+  text-align: center;
+  transition-duration: .3s;
+  text-decoration: none;
+  font-family: 'Bellefair', serif;
+  font-family: "游明朝", YuMincho, "Hiragino Mincho ProN W3", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+}
+
+@media screen and (max-width: 480px) {
+  .more-btn {
+    width: 80%;
+    height: 50px;
+    font-size: 17px;
+  }
+}
+
+.arrow-w {
+  position: absolute;
+  width: 5rem;
+  height: 2px;
+  right: 30px;
+  transition: .3s;
+  transform: translateY(-50%) scaleX(1);
+  transform-origin: left;
+}
+
+.arrow-w:before {
+  position: absolute;
+  top: -10px;
+  left: 2rem;
+  content: "";
+  transition: .3s;
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  margin: 0 10px;
+  border-bottom: 4px solid #fff;
+  border-right: 4px solid #fff;
+  transform: rotate(45deg);
+}
+
+@media screen and (max-width: 480px) {
+  .arrow-w:before {
+    top: -5px;
+    width: 10px;
+    height: 10px;
+  }
+}
+
+.more-btn:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  border-width: 2px;
+  background-clip: padding-box;
+  transition-property: width,opacity;
+  box-sizing: border-box;
+  transition-duration: .3s;
+  border-radius: 80px;
+}
+
+.m-btn a:hover .arrow-w:before {
+  border-bottom: 4px solid #000;
+  border-right: 4px solid #000;
+}
+
+.more-btn:hover {
+  color: #000;
+  border: 1px solid #000;
+}
+
+.more-btn:hover:after {
+  width: 50px;
+  opacity: 0;
+}
+
+.wari {
+  border-radius: 20px;
+  padding: 25px 40px;
+  margin: 60px 0;
+  background: #fff;
+}
+
+.wari ul {
+  margin-bottom: 50px;
+}
+
+.wari .suji {
+  counter-reset: my-counter;
+}
+
+.wari .suji li {
+  text-indent: -1em;
+  padding-left: 1em;
+}
+
+.wari .suji li::before {
+  content: counter(my-counter) "） ";
+  counter-increment: my-counter;
+}
+
+.wari .maru li {
+  text-indent: -1em;
+  padding-left: 1em;
+}
+
+.wari .maru li::before {
+  content: '●';
+}
+
+.wari .att li {
+  text-indent: -1em;
+  padding-left: 1em;
+}
+
+.wari .att li::before {
+  content: '※';
+}
