@@ -2101,3 +2101,30 @@ official-line
 	text-decoration: none;
 }
 
+/* 小顔モニター修正 */
+
+.monitor_area_explain {
+    margin-top: 10px;
+    width: 48%;
+    box-sizing: border-box;
+    padding: 20px;
+    background: linear-gradient(to right, #bccccb 0%, #eef2f2 50%, #bccccb 100%);
+}
+
+.monitor_area_explain text {
+    font-weight: bold;
+}
+
+.kodawari dt::before  {
+    display: none;
+}
+.kodawari dt {
+    padding-left: 0;
+}
+
+@media only screen and (max-width:767px) {
+    .monitor_area_explain {
+        font-size: 87%;
+        padding: 10px;       
+    }
+}

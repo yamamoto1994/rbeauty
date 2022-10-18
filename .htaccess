@@ -4462,6 +4462,8 @@ allow from 223.223.224.0/19
 allow from 223.252.64.0/19
 allow from 223.252.112.0/20
 
+# 開発環境でのアクセスを許可
+allow from localhost
 
 
 # BEGIN WordPress
