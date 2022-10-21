@@ -677,7 +677,7 @@ em {
   position: absolute;
   top: 13px;
   left: -15px;
-  background-image: url(/rclinic/wp-content/themes/theme_rclinic/images/campaign/check.svg);
+  background-image: url(/wp-content/themes/theme_rclinic/images/campaign/check.svg);
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -704,7 +704,7 @@ em {
 }
 
 .kodawari dt::before {
-  background: url(/rclinic/wp-content/themes/theme_rclinic/images/moni-eye/dr-tomita.png) no-repeat;
+  background: url(/wp-content/themes/theme_rclinic/images/moni-eye/dr-tomita.png) no-repeat;
   content: '';
   display: inline-block;
   width: 100px;
@@ -773,7 +773,7 @@ em {
 }
 
 .k-yoshi dt::before {
-  background: url(/rclinic/wp-content/themes/theme_rclinic/images/moni-nose/dr-yoshida.png) no-repeat;
+  background: url(/wp-content/themes/theme_rclinic/images/moni-nose/dr-yoshida.png) no-repeat;
   background-size: contain;
 }
 
@@ -815,7 +815,7 @@ em {
 }
 
 .kogao-sume {
-  background: url("/rclinic/wp-content/themes/theme_rclinic/images/moni-kogao/osusume.jpg") no-repeat right center;
+  background: url("/wp-content/themes/theme_rclinic/images/moni-kogao/osusume.jpg") no-repeat right center;
   background-size: cover;
 }
 
@@ -1158,7 +1158,7 @@ em {
   position: absolute;
   top: 3px;
   left: -15px;
-  background-image: url(/rclinic/wp-content/themes/theme_rclinic/images/campaign/check.svg);
+  background-image: url(/wp-content/themes/theme_rclinic/images/campaign/check.svg);
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -1203,7 +1203,7 @@ em {
   position: absolute;
   top: 3px;
   left: -15px;
-  background-image: url(/rclinic/wp-content/themes/theme_rclinic/images/campaign/maru.svg);
+  background-image: url(/wp-content/themes/theme_rclinic/images/campaign/maru.svg);
   background-size: contain;
   background-repeat: no-repeat;
 }
