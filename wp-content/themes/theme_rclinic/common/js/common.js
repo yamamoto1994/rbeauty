@@ -184,6 +184,19 @@ $(window).on('load scroll', function () {
     }
   });
 });
+// TEL選択
+$(function(){
+  $(".tel_btn_area").hover(
+    //マウスオーバー時の処理
+    function() {
+      $(this).children('.tel_select').fadeIn(0).stop(false, true).animate({ marginTop: '0px', opacity: 1 }, 400);
+    },
+    //マウスアウト時の処理
+    function() {
+      $(this).children('.tel_select').fadeOut(0).stop(false, true).animate({ marginTop: '-20px', opacity: 0 }, 400);
+    }
+  );
+});
 
 // LINE選択
 $(function(){

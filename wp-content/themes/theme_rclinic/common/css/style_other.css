@@ -2122,9 +2122,39 @@ official-line
     padding-left: 0;
 }
 
+.kogao_moni_voice {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.kogao_moni_voice_card {
+    width: 48%;
+}
+
+.kogao_moni_voice_card figure {
+    width: 100%;
+}
+
+
+.monitor_area_explain2 {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 20px;
+    background: linear-gradient(to right, #bccccb 0%, #eef2f2 50%, #bccccb 100%);
+}
+
+.monitor_area_explain2 text {
+    font-weight: bold;
+}
+
 @media only screen and (max-width:767px) {
     .monitor_area_explain {
         font-size: 87%;
         padding: 10px;       
+    }
+    .monitor_area_explain2 {
     }
 }

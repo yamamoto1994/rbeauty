@@ -160,14 +160,27 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 					<div class="logo"><a href="<?php echo esc_url(home_url('/')); ?>"><img src="<?php echo get_template_directory_uri(); ?>/images/logo.svg" alt="アールビューティークリニック 銀座・名古屋｜美容整形・美容外科・美容皮膚科"></a></div>
 				<nav class="dNav pc">
 					<ul>
-						<li class="tel_area">
+						<!-- <li class="tel_area">
 							<a class="tel" href="tel:03-6228-7881">
                 <p>診療時間は［10:00~19:00 不定休］</p>
                 <span class="serif"><p>銀座院</p> <text>03-6228-7881</text></span>
                 <span class="serif"><p>名古屋院</p> <text>052-571-4700</text></span>
               </a>
-						</li>
+						</li> -->
 						<li class="monitor_btn_area"><a href="<?php echo esc_url(home_url('/')); ?>monitor"><img src="<?php echo get_template_directory_uri(); ?>/images/ico_woman_w.svg" alt=""><span>モニター募集</span></a></li>
+						<li class="tel_btn_area">
+              <a>
+                <img src="<?php echo get_template_directory_uri(); ?>/images/ico_tel_w.svg" alt="">
+                <span>電話予約</span>
+              </a>
+              <div class="tel_select">
+                <ul>
+                  <li><a href="tel:03-6228-7881" target="_blank">銀座院 03-6228-7881</a></li>
+                  <li><a href="tel:03-6228-7881" target="_blank">大阪院 xxx-xxx-xxxx</a></li>
+                  <li><a href="tel:052-571-4700" target="_blank">名古屋院 052-571-4700</a></li>
+                </ul>
+              </div>
+            </li>
 						<li class="reserve_btn_area"><a href="<?php echo esc_url(home_url('/')); ?>reserve"><img src="<?php echo get_template_directory_uri(); ?>/images/ico_bell_w.svg" alt=""><span>WEB予約</span></a></li>
 						<li class="line_btn_area">
               <a>
@@ -180,8 +193,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               <div class="line_select">
                 <ul>
                   <li><a href="https://lin.ee/sK3JB9b" target="_blank">銀座院</a></li>
+                  <li><a href="https://lin.ee/oqmQUP2" target="_blank">大阪院</a></li>
                   <li><a href="https://lin.ee/y5Ejtoy" target="_blank">名古屋院</a></li>
-                  <!-- <li><a href="https://lin.ee/oqmQUP2" target="_blank">大阪院</a></li> -->
                 </ul>
               </div>
             </li>
@@ -208,13 +221,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <div class="line_select-sp">
               <ul>
                   <li><a href="https://lin.ee/sK3JB9b" target="_blank">銀座院</a></li>
+                  <li><a href="https://lin.ee/oqmQUP2" target="_blank">大阪院</a></li>
                   <li><a href="https://lin.ee/y5Ejtoy" target="_blank">名古屋院</a></li>
-                  <!-- <li><a href="https://lin.ee/oqmQUP2" target="_blank">大阪院</a></li> -->
               </ul>
             </div>
             <div class="tel_select-sp">
               <ul>
                   <li><a href="tel:03-6228-7881">銀座院：03-6228-7881</a></li>
+                  <li><a href="tel:xxx-xxxx-xxxx">大阪院：xxx-xxxx-xxxx</a></li>
                   <li><a href="tel:052-571-4700">名古屋院：052-571-4700</a></li>
               </ul>
             </div>
@@ -468,6 +482,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 								<div class="menu_list">
                   <ul class="children">
                     <li><a href="<?php echo esc_url(home_url('/')); ?>rclinic/ginza">銀座院</a></li>
+                    <li><a href="<?php echo esc_url(home_url('/')); ?>rclinic/osaka">大阪院</a></li>
                     <li><a href="<?php echo esc_url(home_url('/')); ?>rclinic/nagoya">名古屋院</a></li>
                   </ul>
                 </div>
@@ -559,11 +574,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <ul class="line-ft-select-sp">
           <li><a href="https://lin.ee/sK3JB9b" target="_blank">銀座院</a></li>
           <li><a href="https://lin.ee/y5Ejtoy" target="_blank">名古屋院</a></li>
-          <!-- <li><a href="https://lin.ee/oqmQUP2" target="_blank">大阪院</a></li> -->
+          <li><a href="https://lin.ee/oqmQUP2" target="_blank">大阪院</a></li>
         </ul>
         <div class="tel_ft_select-sp">
               <ul>
                   <li><a href="tel:03-6228-7881">銀座院：03-6228-7881</a></li>
+                  <li><a href="tel:052-571-4700">大阪院：xxx-xxxx-xxxx</a></li>
                   <li><a href="tel:052-571-4700">名古屋院：052-571-4700</a></li>
               </ul>
         </div>
@@ -585,6 +601,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 .line_btn_area a {
     background: #18b92a;
 }
+.tel_btn_area a {
+  background: #D03FFE;
+}
+
 .f-moni a {
     background: #000;
 }
@@ -607,7 +627,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   margin-bottom: 2px;
   display: inline-block;
 }
-.line_btn_area a em{
+.line_btn_area a em,
+.tel_btn_area a em {
   color:#18b92a;
 }
 .f-tel a em{
@@ -638,18 +659,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   padding: 20px 10px 10px!important;
 }
 
-.line_select {
+.line_select,
+.tel_select {
   position: absolute;
   display: none;
 }
-.line_select ul {
+.tel_select {
+  width: 140%;
+}
+.line_select ul,
+.tel_select ul {
   flex-direction: column;
   margin-top: 0!important;
 }
+.tel_select ul,
+.tel_select ul li {
+  width: 100%;
+}
+
 .line_select ul li {
   
 }
-.line_select ul li a {
+.line_select ul li a,
+.tel_select ul li a {
   background-color: #FFF;
   border: 1px solid #333333;
   border-radius: 0px;
@@ -659,13 +691,20 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 }
 
 .line_select ul li:nth-child(1) a,
-.line_select ul li:nth-child(2) a {
+.line_select ul li:nth-child(2) a,
+.tel_select ul li:nth-child(1) a,
+.tel_select ul li:nth-child(2) a {
   border-bottom: none;
 }
-.line_select ul li a:hover {
+.line_select ul li a:hover,
+.tel_select ul li a:hover {
   opacity: 1;
   background-color: #f7fcfe;
   font-weight: bold;
+}
+
+.tel_btn_area a {
+  /* width: 100%; */
 }
 
 .line_select-sp, .tel_select-sp {
